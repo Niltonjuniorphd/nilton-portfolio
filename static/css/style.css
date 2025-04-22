@@ -1,0 +1,155 @@
+/* style.css */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Inter", sans-serif;
+	background-color: #f9f9f9;
+	color: #333;
+	line-height: 1.6;
+}
+
+.profile-head {
+	text-align: center;
+	padding: 1rem;
+	background: linear-gradient(135deg, #4a90e2, #007aff);
+	color: #074a77;
+	position: relative;
+
+	background-image: url("/static/img/faixa.png");
+	background-repeat: no-repeat;
+	background-size: cover; /* cover or 'contain', depending on the design */
+	background-position: top;
+}
+
+.profile-info {
+	position: relative;
+	text-align: center;
+}
+
+.profile-img {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	object-fit: cover;
+	border: 2px solid #ffffff;
+	margin-bottom: 0.1rem;
+}
+
+nav {
+	background-color: #fff;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+nav ul {
+	display: flex;
+	justify-content: center;
+	list-style: none;
+	padding: 0.2rem;
+	gap: 1rem;
+}
+
+nav li {
+	margin: 0 1rem;
+}
+
+nav a {
+	text-decoration: none;
+	color: #007aff;
+	font-weight: 600;
+	transition: color 0.3s ease;
+}
+
+nav a:hover {
+	color: #005bb5;
+}
+
+main {
+	text-align: center;
+	padding: 0.5rem 1rem;
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+footer {
+	text-align: center;
+	padding: 1.5rem;
+	background-color: #f1f1f1;
+	margin-top: 3rem;
+	color: #666;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+	nav ul {
+		flex-direction: row;
+	}
+
+	nav li {
+		margin: 0.5rem 0;
+	}
+
+	.profile-img {
+		width: 120px;
+		height: 120px;
+	}
+}
+
+.about-section,
+.interests-section {
+	margin-bottom: 3rem;
+}
+
+h2 {
+	color: #333;
+	margin-bottom: 1rem;
+	font-size: 1.75rem;
+}
+
+.stack-list-data,
+.stack-list-app {
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	gap: 0.75rem;
+	padding: 0;
+	margin-top: 1rem;
+}
+
+.stack-list-data li,
+.stack-list-app li {
+	background-color: #007aff;
+	color: white;
+	padding: 0.1rem 1rem;
+	border-radius: 1rem;
+	font-weight: 500;
+}
+
+.social-links {
+	display: flex;
+	justify-content: center;
+	gap: 2rem;
+	padding: 0.3rem 0;
+	flex-wrap: wrap;
+}
+
+.social-links img {
+	width: 48px;
+	height: 48px;
+	object-fit: contain;
+	border-radius: 12px;
+	cursor: pointer;
+	transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.social-links img:hover {
+	transform: scale(1.1);
+	opacity: 0.8;
+}
