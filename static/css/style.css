@@ -102,6 +102,7 @@ footer {
 
 .about-section,
 .interests-section {
+	text-align: center;
 	margin-bottom: 3rem;
 }
 
@@ -109,6 +110,11 @@ h2 {
 	color: #333;
 	margin-bottom: 0rem;
 	font-size: 1.75rem;
+}
+h3 {
+	color: #333;
+	margin-bottom: 0.5rem;
+	font-size: 1.1rem;
 }
 
 .stack-list-program,
@@ -120,14 +126,26 @@ h2 {
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
-	gap: 0.75rem;
+	gap: 1rem;
 	padding: 0;
 	margin-bottom: 1rem;
 	align-items: center;
 }
 
-.stack-list-program li,
-.stack-list-data li,
+.stack-list-program img,
+.stack-list-data img,
+.stack-list-cloud img,
+.stack-list-DB img,
+.stack-list-app img {
+	width: 48px;
+	height: 48px;
+	object-fit: contain;
+	border-radius: 12px;
+	cursor: pointer;
+	transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* .stack-list-data li,
 .stack-list-cloud li,
 .stack-list-DB li,
 .stack-list-app li {
@@ -137,7 +155,7 @@ h2 {
 	padding: 0.1rem 0.2rem;
 	border-radius: 0.5rem;
 	font-weight: 500;
-}
+} */
 
 .social-links {
 	display: flex;
