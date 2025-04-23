@@ -1,0 +1,85 @@
+{% extends "home.html" %} {% block title %}Certificates - Nilton's Portfolio{% endblock %} {% block
+content %}
+<section class="certificates">
+	<h2>Certificates</h2>
+	<div class="certificates-container">
+		<!-- Certificate Item -->
+		<div class="certificate">
+			<div class="cert-image">
+				<img
+					src="{{ url_for('static', filename='img/udacity.png') }}"
+					alt="Certificate Title"
+				/>
+			</div>
+			<div class="cert-details">
+				<h3>Data Scientist</h3>
+				<p>Offered by: Udacity</p>
+				<p>Issued: February 2025</p>
+				<a
+					href="https://www.udacity.com/certificate/e/d5442662-0ec7-11ef-bd5b-f7751922b341"
+					target="_blank"
+					>View Certificate</a
+				>
+			</div>
+		</div>
+
+		<!-- Duplicate block for more certificates -->
+		<div class="certificate">
+			<div class="cert-image">
+				<img
+					src="{{ url_for('static', filename='img/coursera.jpg') }}"
+					alt="Certificate Title"
+				/>
+			</div>
+			<div class="cert-details">
+				<h3>Data Analytics (7 courses)</h3>
+				<p>Offered by: Google / Coursera</p>
+				<p>Issued: May 2024</p>
+				<a
+					href="https://coursera.org/share/8a027494e1c1e0429f10388c812172e5"
+					target="_blank"
+					>View Certificate</a
+				>
+			</div>
+		</div>
+
+		<div class="certificate">
+			<div class="cert-image">
+				<img
+					src="{{ url_for('static', filename='img/mit.jpg') }}"
+					alt="Certificate Title"
+				/>
+			</div>
+			<div class="cert-details">
+				<h3>Data-Driven Decisions</h3>
+				<p>Offered by: MIT | IDSS /</p>
+				<p>Issued: May 2024</p>
+				<a
+					href="https://www.mygreatlearning.com/certificate/XLQNNJVQ"
+					target="_blank"
+					>View Certificate</a
+				>
+			</div>
+		</div>
+
+		<div class="certificate">
+			<div class="cert-image">
+				<img
+					src="{{ url_for('static', filename='img/kaggle.jpg') }}"
+					alt="Certificate Title"
+				/>
+			</div>
+			<div class="cert-details">
+				<h3>Introdutory Lessons</h3>
+				<p>Offered by: Kaggle /</p>
+				<p>Issued: May 2024</p>
+				<a
+					href="https://www.kaggle.com/niltonjrphd"
+					target="_blank"
+					>View Profile</a
+				>
+			</div>
+		</div>
+	</div>
+</section>
+{% endblock %}

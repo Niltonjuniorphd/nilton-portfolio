@@ -10,6 +10,10 @@ def home():
 def stacks():
     return render_template('stacks.html')
 
+@app.route('/certificate')
+def certificate():
+    return render_template('certificate.html')
+
 @app.route('/projects')
 def projects():
     return render_template('projects.html')

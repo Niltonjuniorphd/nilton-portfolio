@@ -1,3 +1,83 @@
-{% extends 'home.html' %} {% block content %}
-<h1>block content projects</h1>
-{% endblock content %}
+{% extends "home.html" %} {% block title %}Projects - Nilton's Portfolio{% endblock %} {% block
+content %}
+<section class="projects">
+	<h2>Projects</h2>
+	<div class="projects-container">
+		<div class="project">
+			<div class="project-image">
+				<img
+					src="{{ url_for('static', filename='img/starfig.png') }}"
+					alt="Certificate Title"
+				/>
+			</div>
+			<div class="project-details">
+				<h3>Machine-Learn</h3>
+				<p><i>Using data science and machine learning to decode Starbucks customer behaviour</i></p>
+				<h5>Data: Starbucks transactions Open Data</h5>
+				<p>Motivated by: Udacity</p>
+				<p>Issued: April 2025</p>
+				<a
+					href="https://github.com/Niltonjuniorphd/Starbucks_project"
+					target="_blank"
+					>View Projetc on GitHub</a
+				>
+				<p>or</p>
+				<a
+					href="https://medium.com/@niltonjuniorphd/coffee-cheers-using-data-science-and-machine-learning-to-decode-starbucks-customer-behaviour-7d1c81777eae"
+					target="_blank"
+					>View Article on Medium</a
+				>
+			</div>
+		</div>
+
+		<div class="project">
+			<div class="project-image">
+				<img
+					src="{{ url_for('static', filename='img/b3.png') }}"
+					alt="Certificate Title"
+				/>
+			</div>
+			<div class="project-details">
+				<h3>Web Scraping + Machine-Learn</h3>
+				<p>
+					<i
+						>Data analysis tools for working with news and daily exchange rate data for the USA
+						dollar against the Brazilian currency Real</i
+					>
+				</p>
+				<h5>Data: Web scraping data</h5>
+				<p>Motivated by: Me</p>
+				<p>Issued: January 2025</p>
+				<a
+					href="https://github.com/Niltonjuniorphd/dados_b3"
+					target="_blank"
+					>View Projetc on GitHub</a
+				>
+			</div>
+		</div>
+
+		<div class="project">
+			<div class="project-image">
+				<img
+					src="{{ url_for('static', filename='img/horse.png') }}"
+					alt="Certificate Title"
+				/>
+			</div>
+			<div class="project-details">
+				<h3>A colection of traditional Data Projects</h3>
+				<p>
+					<i>Titanic survivor, Boston data set and others</i>
+				</p>
+				<h5>Data: Several Data sets</h5>
+				<p>Motivated by: Me</p>
+				<p>Issued: January 2025</p>
+				<a
+					href="https://github.com/Niltonjuniorphd/legendary-wingedhorse"
+					target="_blank"
+					>View Projetc on GitHub</a
+				>
+			</div>
+		</div>
+	</div>
+</section>
+{% endblock %}

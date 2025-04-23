@@ -1,3 +1,59 @@
-{% extends 'home.html' %} {% block content %}
-<h1>block content contact</h1>
+{% extends "home.html" %} {% block title %}Contact - Nilton's Portfolio{% endblock %} {% block
+content %}
+<section class="contact">
+	<h2>Contact</h2>
+	<ul>
+		<li><strong>Location: </strong>Minas Gerais, <strong>Brazil</strong></li>
+		<li><strong>City: </strong>Ipatinga</li>
+		<li><strong>Phone: </strong>+55 21 99609-9618</li>
+		<li>
+			<strong>Email: </strong
+			><a href="mailto:niltonjuniorphd@gmail.com">niltonjuniorphd@gmail.com</a>
+		</li>
+
+		<li>
+			<strong>LinkedIn: </strong>
+			<a
+				href="https://www.linkedin.com/in/niltonphd/"
+				target="_blank"
+				>linkedin.com/in/niltonphd</a
+			>
+		</li>
+
+		<li>
+			<strong>GitHub:</strong>
+			<a
+				href="https://github.com/Niltonjuniorphd"
+				target="_blank"
+				>github.com/Niltonjuniorphd</a
+			>
+		</li>
+
+		<li>
+			<strong>Google Map:</strong>
+			<a
+				href="https://www.google.com/maps/place/Ipatinga+-+MG"
+				target="_blank"
+				>View map of Ipatinga</a
+			>
+		</li>
+
+		<li><strong>Office Hours: </strong> GMT/UTC -03:00</li>
+
+		<li>
+			<strong>Map Preview: </strong><br />
+			<a
+				href="https://www.google.com/maps/place/Ipatinga+-+MG"
+				target="_blank"
+			>
+				<img
+					src="{{ url_for('static', filename='img/googlemapipatinga.png') }}"
+					alt="Map of Ipatinga, MG"
+					width="400"
+					height="300"
+				/>
+			</a>
+		</li>
+	</ul>
+</section>
 {% endblock content %}
